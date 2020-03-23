@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Aprendizaje</title>
+  <meta name="description" content="Formulario">
+  <meta name="author" content="Veronica Borda">
+
+  <link rel="stylesheet" href="/estilos/userForm">
+
+</head>
+
+<body>
+    <form action="/recibirData" method="post">
+
+        Datos personales:</label><br>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="dni">DNI:</label><br>
+        <input type="text" id="dni" name="dni"><br>
+        <br>
+        
+        Género:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br>
+        <br>
+
+        <label for="ciudad">Escoja una ciudad:</label><br>
+        <select id="ciudad" name ="ciudad" >
+            <option value="Lima">Lima</option>
+            <option value="Arequipa">Arequipa</option>
+            <option value="Cusco">Cusco</option>
+            <option value="Trujillo">Trujillo</option>
+        </select><br>
+        <br>
+
+        <label for="checkbox">Escoja un hobbie:</label><br>
+        <input type="checkbox" id="hobbie1" name="hobbie1" value="Leer"> 
+        <label for="hobbie1"> Me gusta leer</label><br>
+        <input type="checkbox" id="hobbie2" name="hobbie2" value="Nadar">
+        <label for="hobbie2"> Me gusta nadar</label><br>
+        <input type="checkbox" id="hobbie3" name="hobbie3" value="Escalar">
+        <label for="hobbie3"> Me gusta escalar</label><br>
+        <br>
+
+        <input type="submit" value="Enviar"><br>
+
+      </form>
+    </body>
+</html>

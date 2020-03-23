@@ -1,0 +1,19 @@
+{
+  "name": "p1",
+  "version": "1.0.0",
+  "description": "Proyecto para responder a un browser",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VeroBc"
+  },
+  "author": "Veronica Borda",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^6.5.5",
+    "express": "^4.17.1"
+  }
+}
