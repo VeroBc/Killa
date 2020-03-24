@@ -13,7 +13,7 @@ const msg = {
 
 app.get('/enviarEmail', (req, res) => {
 
-    sgMail.setApiKey('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');
+    sgMail.setApiKey(SENDGRID_API_KEY);
     let aMsg = msg;
     aMsg.subject ='Enviando correos con SendGrid is Fun'
     aMsg.text = 'Esta es una prueba para enviar correos'
@@ -26,8 +26,13 @@ app.get('/enviarEmail', (req, res) => {
 });
 
 app.get('/llenarForm',  (req, res) => {
-    res.sendFile( __dirname + '/HTML/userForm1.html');
+    res.sendFile( __dirname + '/HTML/userForm.html');
 });
+
+app.get('/estilos/userForm',  (req, res) => {
+    res.sendFile( __dirname + '/CSS/userForm.css');
+});
+
 
 app.post('/recibirData',  (req, res) => {
 
@@ -48,7 +53,7 @@ app.post('/recibirData',  (req, res) => {
 
     res.send(mensaje);
 
-    sgMail.setApiKey('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');
+    sgMail.setApiKey(SENDGRID_API_KEY);
 
     let aMsg = msg;
     aMsg.subject ='Recibir data de formulario'
